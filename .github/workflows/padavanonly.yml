@@ -141,8 +141,14 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: release.txt
+        tag_name: padavanonly_23.05_${{ steps.tag.outputs.release_tag }}
+        body: |
+          ### Padavanonly immortalwrt 23.05 Images for JCG q30/MR3000D-CIq(512M)
+          - username : root
+          - default address: 192.168.123.1
+          ### Padavanonly immortalwrt 23.05 JCG q30/MR3000D-CIq(512M) 固件
+          - 默认 root 192.168.123.1
+          - 21.02 能用的mtk无线驱动和mtk网络加速都有，所以是5.4的内核
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
