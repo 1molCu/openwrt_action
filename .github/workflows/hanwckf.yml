@@ -141,7 +141,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: hanwckf ${{ steps.tag.outputs.release_tag }}
+        tag_name: hanwckf_${{ steps.tag.outputs.release_tag }}
         body: |
           ### Hanwckf immortalwrt Images for JCG q30/MR3000D-CIq(512M)
           - username: root
