@@ -19,5 +19,5 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall_packages
+#git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall_packages
